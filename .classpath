@@ -28,5 +28,6 @@
 	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/antlr-2.7.6.jar"/>
 	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/junit-3.8.2.jar" sourcepath="C:/Users/Administrator/.m2/repository/junit/junit/3.8.2/junit-3.8.2-sources.jar"/>
 	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/servlet-api.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/mysql-connector-java-5.1.21-bin.jar"/>
 	<classpathentry kind="output" path="WebRoot/WEB-INF/classes"/>
 </classpath>

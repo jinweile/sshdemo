@@ -38,8 +38,8 @@ public class UserBizImplTest extends TestCase {
 	 */
 	public void testSave(){
 		User user=new User();
-		user.setUsername("hello");
-		user.setPassword("hellod");
+		user.setUsername("admin");
+		user.setPassword("admin");
 		Assert.assertTrue(biz.save(user));
 	}
 }

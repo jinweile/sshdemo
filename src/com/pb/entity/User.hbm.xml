@@ -5,7 +5,8 @@
 <hibernate-mapping package="com.pb.entity">
 	<class table="USERS" name="User">
 		<id name="id" column="ID" type="long">
-			<generator class="increment" />
+		<!-- oracle : increment -->
+			<generator class="identity" />
 		</id>
 		<property name="username" type="string">
 			<column name="USERNAME" length="20" />
