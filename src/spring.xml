@@ -47,7 +47,7 @@
 	
 	<!-- 数据访问层(DAO) -->
 	<!-- 基类Dao -->
-	<bean id="baseDao" class="com.pb.dao.impl.BaseDaoImpl">
+	<bean id="baseDao" abstract="true" class="com.pb.dao.impl.BaseDaoImpl">
 		<!-- 注入SessionFactory属性 -->
 		<property name="sessionFactory" ref="sessionFactory" />
 		<!-- 注入ptm属性 -->

@@ -14,7 +14,7 @@ import org.springframework.transaction.support.DefaultTransactionDefinition;
 
 import com.pb.dao.IBaseDao;
 
-public class BaseDaoImpl<T> implements IBaseDao<T> {
+public abstract class BaseDaoImpl<T> implements IBaseDao<T> {
 	private final Logger log = LoggerFactory.getLogger(this.getClass());
 	private Class<T> entityClass;
 	private String className;
@@ -29,7 +29,7 @@ public class BaseDaoImpl<T> implements IBaseDao<T> {
 			entityClass = (Class<T>) ((ParameterizedType) getClass().getGenericSuperclass()).getActualTypeArguments()[0];
 		} catch (Exception e) {
 			entityClass = (Class<T>) Object.class;
-			//e.printStackTrace();
+			e.printStackTrace();
 		}
 		className = entityClass.getSimpleName(); // 泛型类的名称(非完全限定名)
 	}
